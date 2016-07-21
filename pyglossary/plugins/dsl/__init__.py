@@ -269,6 +269,7 @@ def _clean_tags(line, audio):
 
     # \[...\]
     line = line.replace(r'\[', '[').replace(r'\]', ']')
+    line = line.replace(r'\</div>', '<br/></div>')
     return line
 
 
